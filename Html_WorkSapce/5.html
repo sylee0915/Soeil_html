@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAVER 스타일 헤더</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: azure;
+            width: 1340px;
+            height: 2930px;
+            font-family: sans-serif;
+        }
+
+        header {
+            width: 1280px;
+            height: 180px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0 40px;
+        }
+
+        .left_icon,
+        .right_icon {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            top: 10px;
+        }
+
+        .left_icon {
+            left: 40px;
+        }
+
+        .right_icon {
+            right: 40px;
+        }
+
+        .bar,
+        .pay,
+        .talk,
+        .notify,
+        .shop_area {
+            height: 32px;
+            width: 32px;
+            padding: 8px;
+            display: block;
+        }
+
+        .naver {
+            font-weight: bold;
+            color: #03c75a;
+            font-size: 50px;
+            white-space: nowrap;
+        }
+
+        .search_area {
+            width: 706px;
+            height: 58px;
+            border: 1px solid #03c75a;
+            border-radius: 33px;
+            background-color: #fff;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            z-index: 10;
+        }
+
+        .btn_search,
+        .btn_keyboard,
+        .btn_arrow {
+            font-size: 20px;
+            cursor: pointer;
+            color: black;
+        }
+
+        .btn_keyboard {
+            padding: 22px 3px;
+        }
+
+        .btn_arrow {
+            padding: 26px 6px;
+        }
+
+        nav {
+            position: absolute;
+            top: 135px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+
+        .shortcut_list {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .shortcut_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 13px;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .left_icon a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .right_icon a{
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .shortcut_item a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .shortcut_item i {
+            font-size: 24px;
+            margin-bottom: 4px;
+            color: black;
+        }
+
+        .shortcut_item span {
+            display: block;
+        }
+
+        .search_wrapper {
+            position: absolute;
+            top: 52px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left_icon">
+            <a href="#">
+                <div class="bar"><i class="fa-solid fa-bars"></i></div>
+            </a>
+            <a href="#">
+                <div class="pay"><i class="fa-brands fa-google-pay"></i></div>
+            </a>
+        </div>
+
+        <div class="right_icon">
+            <a href="#">
+                <div class="talk"><i class="fa-regular fa-comment"></i></div>
+            </a>
+            <a href="#">
+                <div class="notify"><i class="fa-regular fa-bell"></i></div>
+            </a>
+            <a href="#">
+                <div class="shop_area"><i class="fa-solid fa-basket-shopping"></i></div>
+            </a>
+        </div>
+        <div class="search_wrapper">
+            <div class="naver">NAVER</div>
+            <div class="search_area">
+                <div class="btn_keyboard"><i class="fa-solid fa-keyboard"></i></div>
+                <div class="btn_arrow"><i class="fa-solid fa-caret-down"></i></div>
+                <div class="btn_search"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="shortcut_list">
+            <li class="shortcut_item">
+                <a href="#"><i class="fa-solid fa-envelope-open"></i><span>메일</span></a>
+            </li>
+            <li class="shortcut_item">
+                <a href="#"><i class="fa-solid fa-mug-saucer"></i><span>카페</span></a>
+            </li>
+            <li class="shortcut_item">
+                <a href="#"><i class="fa-solid fa-blog"></i><span>블로그</span></a>
+            </li>
+            <li class="shortcut_item">
+                <a href="#"><i class="fa-solid fa-store"></i><span>스토어</span></a>
+            </li>
+            <li class="shortcut_item">
+                <a href="#"><i class="fa-solid fa-newspaper"></i><span>뉴스</span></a>
+            </li>
+            <li class="shortcut_item">
+                <a href="#"><i class="fa-solid fa-arrow-trend-up"></i><span>증권</span></a>
+            </li>
+            <li class="shortcut_item">
+                <a href="#"><i class="fa-solid fa-landmark"></i><span>부동산</span></a>
+            </li>
+            <li class="shortcut_item">
+                <a href="#"><i class="fa-solid fa-location-dot"></i><span>지도</span></a>
+            </li>
+            <li class="shortcut_item">
+                <a href="#"><i class="fa-brands fa-salesforce"></i><span>웹툰</span></a>
+            </li>
+            <li class="shortcut_item">
+                <a href="#"><i class="fa-brands fa-square-xing"></i><span>치지직</span></a>
+            </li>
+            <li class="shortcut_item">
+                <a href="#"><i class="fa-solid fa-ellipsis"></i><span>더보기</span></a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
